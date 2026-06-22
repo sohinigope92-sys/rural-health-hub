@@ -31,3 +31,21 @@ function chat() {
 
   document.getElementById("chatResult").innerHTML = response;
 }
+
+function chat() {
+  let input = document.getElementById("chatInput").value;
+
+  let response = "";
+
+  if (input.toLowerCase().includes("fever")) {
+    response = "You may have a mild infection. Stay hydrated and consider paracetamol.";
+  } else if (input.toLowerCase().includes("cold")) {
+    response = "Common cold detected. Take rest and warm fluids.";
+  } else if (input.toLowerCase().includes("headache")) {
+    response = "Headache may be due to stress or dehydration. Drink water and rest.";
+  } else {
+    response = "Please consult a doctor for accurate diagnosis.";
+  }
+
+  document.getElementById("chatResult").innerHTML = response;
+}
