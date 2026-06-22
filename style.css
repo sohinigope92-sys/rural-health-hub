@@ -135,3 +135,26 @@ footer {
   padding: 15px;
   border-radius: 10px;
 }
+
+.chatbot {
+  text-align: center;
+  padding: 30px;
+}
+
+#chatInput {
+  width: 60%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#chatResult {
+  margin-top: 15px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
