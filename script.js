@@ -1,45 +1,22 @@
-const API = "http://localhost:5000";
-
-async function register() {
-  const username = document.getElementById("regUser").value;
-  const password = document.getElementById("regPass").value;
-
-  const res = await fetch(API + "/register", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ username, password })
-  });
-
-  const data = await res.json();
-  alert(data.message);
+function register() {
+  let user = document.getElementById("regUser").value;
+  alert("Registered successfully: " + user);
 }
 
-async function login() {
-  const username = document.getElementById("logUser").value;
-  const password = document.getElementById("logPass").value;
-
-  const res = await fetch(API + "/login", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ username, password })
-  });
-
-  const data = await res.json();
-  alert(data.message);
+function login() {
+  let user = document.getElementById("logUser").value;
+  alert("Welcome back, " + user);
 }
 
-async function consult() {
-  const name = document.getElementById("name").value;
-  const symptoms = document.getElementById("symptoms").value;
+function consult() {
+  let name = document.getElementById("name").value;
+  let symptoms = document.getElementById("symptoms").value;
 
-  const res = await fetch(API + "/consult", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ name, symptoms })
-  });
+  let result = `
+    Doctor Advice: Stay hydrated and take rest.<br>
+    Suggested Medicine: Paracetamol<br>
+    Nearby Pharmacy: Village Medical Store
+  `;
 
-  const data = await res.json();
-
-  document.getElementById("result").innerHTML =
-    `Advice: ${data.doctorAdvice} <br> Pharmacy: ${data.pharmacy}`;
+  document.getElementById("result").innerHTML = result;
 }
