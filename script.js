@@ -23,3 +23,11 @@ function consult() {
 
   document.getElementById("result").innerHTML = result;
 }
+
+function chat() {
+  let input = document.getElementById("chatInput").value;
+
+  let response = "Based on your symptoms, you may need rest and hydration. Please consult a doctor for accurate diagnosis.";
+
+  document.getElementById("chatResult").innerHTML = response;
+}
