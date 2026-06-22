@@ -117,3 +117,21 @@ footer {
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
+
+.chatbot {
+  text-align: center;
+  padding: 30px;
+}
+
+#chatInput {
+  width: 60%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#chatResult {
+  margin-top: 15px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
