@@ -1,23 +1,59 @@
-<h1>SehatSetu</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SehatSetu - Rural Health Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>SehatSetu</h1>
+  <p>Connecting Rural India to Healthcare</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Consult</a>
+  <a href="#">Pharmacy</a>
+  <a href="#">About</a>
+</nav>
+
+<section class="hero">
+  <h2>Accessible Healthcare for Everyone</h2>
+  <p>Consult certified doctors, get prescriptions, and find nearby medicines.</p>
+</section>
 
 <div class="container">
-  <h2>Register</h2>
-  <input id="regUser" placeholder="Username">
-  <input id="regPass" placeholder="Password">
-  <button onclick="register()">Register</button>
+
+  <div class="card">
+    <h2>Register</h2>
+    <input id="regUser" placeholder="Username">
+    <input id="regPass" type="password" placeholder="Password">
+    <button onclick="register()">Register</button>
+  </div>
+
+  <div class="card">
+    <h2>Login</h2>
+    <input id="logUser" placeholder="Username">
+    <input id="logPass" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div class="card">
+    <h2>Consult Doctor</h2>
+    <input id="name" placeholder="Your Name">
+    <input id="symptoms" placeholder="Symptoms">
+    <button onclick="consult()">Consult</button>
+    <div id="result"></div>
+  </div>
+
 </div>
 
-<div class="container">
-  <h2>Login</h2>
-  <input id="logUser" placeholder="Username">
-  <input id="logPass" placeholder="Password">
-  <button onclick="login()">Login</button>
-</div>
+<footer>
+  <p>© 2026 SehatSetu | Rural Telemedicine Platform</p>
+</footer>
 
-<div class="container">
-  <h2>Consult Doctor</h2>
-  <input id="name" placeholder="Your Name">
-  <input id="symptoms" placeholder="Symptoms">
-  <button onclick="consult()">Consult</button>
-  <div id="result"></div>
-</div>
+<script src="script.js"></script>
+</body>
+</html>
