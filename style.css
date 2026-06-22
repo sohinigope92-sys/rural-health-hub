@@ -1,40 +1,80 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #4facfe, #00f2fe);
-  color: #333;
+  background: #f4f7fb;
 }
 
-h1 {
-  text-align: center;
+/* Header */
+header {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
   color: white;
+  text-align: center;
   padding: 20px;
 }
 
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #333;
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #4facfe;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px;
+  background: #eaf4ff;
+}
+
+/* Container */
 .container {
-  width: 320px;
-  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Cards */
+.card {
   background: white;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+.card h2 {
+  text-align: center;
+}
+
+/* Inputs */
 input {
   width: 90%;
   padding: 10px;
   margin: 10px 0;
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid #ccc;
 }
 
+/* Buttons */
 button {
   width: 100%;
   padding: 10px;
   background: #4facfe;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
@@ -42,9 +82,19 @@ button:hover {
   background: #007bff;
 }
 
+/* Result */
 #result {
-  margin-top: 15px;
-  padding: 10px;
+  margin-top: 10px;
   background: #f1f1f1;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: white;
+  margin-top: 20px;
 }
