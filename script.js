@@ -13,9 +13,12 @@ function consult() {
   let symptoms = document.getElementById("symptoms").value;
 
   let result = `
-    Doctor Advice: Stay hydrated and take rest.<br>
-    Suggested Medicine: Paracetamol<br>
-    Nearby Pharmacy: Village Medical Store
+    <strong>Patient:</strong> ${name} <br>
+    <strong>Symptoms:</strong> ${symptoms} <br><br>
+
+    <strong>Doctor Advice:</strong> Take rest, stay hydrated.<br>
+    <strong>Prescription:</strong> Paracetamol (after meals)<br>
+    <strong>Pharmacy:</strong> Nearby Rural Medical Store
   `;
 
   document.getElementById("result").innerHTML = result;
