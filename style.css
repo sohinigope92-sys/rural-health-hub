@@ -188,3 +188,17 @@ footer {
   text-align: center;
   padding: 15px;
 }
+
+/* FORCE FIX */
+.feature-box div {
+  color: black !important;
+}
+
+.education {
+  color: black !important;
+}
+
+.education p,
+.education li {
+  color: black !important;
+}
