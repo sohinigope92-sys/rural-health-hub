@@ -208,3 +208,21 @@ footer {
 .chatbot button {
   color: white;
 }
+
+.form-box h2 {
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.form-box,
+.form-box * {
+    color: #000;
+}
+
+input {
+    color: #000;
+}
+
+input::placeholder {
+    color: #555;
+}
