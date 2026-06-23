@@ -4,7 +4,6 @@ body {
   background: #f4f7fb;
 }
 
-/* Header */
 header {
   background: linear-gradient(to right, #4facfe, #00f2fe);
   color: white;
@@ -12,7 +11,6 @@ header {
   padding: 20px;
 }
 
-/* Navbar */
 nav {
   display: flex;
   justify-content: center;
@@ -29,14 +27,12 @@ nav a:hover {
   background: #4facfe;
 }
 
-/* Hero Section */
 .hero {
   text-align: center;
   padding: 40px;
   background: #eaf4ff;
 }
 
-/* Container */
 .container {
   display: flex;
   justify-content: center;
@@ -45,7 +41,6 @@ nav a:hover {
   padding: 20px;
 }
 
-/* Cards */
 .card {
   background: white;
   padding: 20px;
@@ -58,7 +53,6 @@ nav a:hover {
   text-align: center;
 }
 
-/* Inputs */
 input {
   width: 90%;
   padding: 10px;
@@ -67,7 +61,6 @@ input {
   border: 1px solid #ccc;
 }
 
-/* Buttons */
 button {
   width: 100%;
   padding: 10px;
@@ -140,6 +133,7 @@ footer {
 .chatbot {
   text-align: center;
   padding: 30px;
+  color: black !important;
 }
 
 #chatInput {
@@ -189,7 +183,6 @@ footer {
   padding: 15px;
 }
 
-/* FORCE FIX */
 .feature-box div {
   color: black !important;
 }
@@ -201,4 +194,17 @@ footer {
 .education p,
 .education li {
   color: black !important;
+}
+
+.chatbot h2,
+.chatbot h3 {
+  color: black !important;
+}
+
+.chatbot input {
+  color: black;
+}
+
+.chatbot button {
+  color: white;
 }
