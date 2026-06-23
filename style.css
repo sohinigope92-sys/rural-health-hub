@@ -174,3 +174,10 @@ footer {
   margin: 10px;
   font-size: 18px;
 }
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
