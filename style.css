@@ -116,6 +116,7 @@ footer {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  color: black; 
 }
 
 .chatbot {
@@ -162,7 +163,12 @@ footer {
 .education {
   padding: 40px;
   text-align: center;
-  background: #e8f5e9;
+  background: #f0f8ff;
+  color: black; 
+}
+
+.education p {
+  color: black;
 }
 
 .education ul {
@@ -173,6 +179,7 @@ footer {
 .education li {
   margin: 10px;
   font-size: 18px;
+  color: black;
 }
 
 footer {
