@@ -50,3 +50,8 @@ function chat() {
 
   document.getElementById("chatResult").innerHTML = response;
 }
+
+function showPharmacy() {
+  document.getElementById("pharmacyResult").innerText =
+    "Nearest pharmacy: ABC Medical Store (2 km away)";
+}
