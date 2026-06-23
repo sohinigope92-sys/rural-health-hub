@@ -158,3 +158,19 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+
+.education {
+  padding: 40px;
+  text-align: center;
+  background: #e8f5e9;
+}
+
+.education ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education li {
+  margin: 10px;
+  font-size: 18px;
+}
