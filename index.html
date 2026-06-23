@@ -47,9 +47,13 @@
 
   <section id="chatbot" class="chatbot">
   <h2>AI Health Assistant</h2>
-  <input id="chatInput" placeholder="Describe your symptoms...">
-  <button onclick="chat()">Ask</button>
+  <input type="text" id="symptoms" placeholder="Enter symptoms"><br><br>
+
+  <button onclick="consult()">Consult</button>
+  <button onclick="showPharmacy()">Find Nearby Pharmacy</button>
+
   <div id="chatResult"></div>
+  <div id="pharmacyResult"></div>
 </section>
 
 <div class="container">
