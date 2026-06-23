@@ -13,18 +13,18 @@
 </header>
 
 <nav>
-  <a href="#">Home</a>
-  <a href="#">Consult</a>
-  <a href="#">Pharmacy</a>
-  <a href="#">About</a>
+  <a href="#home">Home</a>
+  <a href="#features">Services</a>
+  <a href="#education">Education</a>
+  <a href="#chatbot">Consult</a>
 </nav>
 
-<section class="hero">
+<header id="home">
   <h2>Accessible Healthcare for Everyone</h2>
   <p>Consult certified doctors, get prescriptions, and find nearby medicines.</p>
 </section>
 
-<section class="features">
+<section id="features" class="features">
   <h2>Our Services</h2>
   <div class="feature-box">
     <div>👨‍⚕️ Online Doctor Consultation</div>
@@ -33,7 +33,19 @@
   </div>
 </section>
 
-  <section class="chatbot">
+  <section id="education" class="education">
+  <h2>Health & Hygiene Awareness</h2>
+  <p>Essential practices for a healthy life</p>
+
+  <ul>
+    <li>🧼 Wash hands regularly</li>
+    <li>💧 Drink clean water</li>
+    <li>🍎 Eat nutritious food</li>
+    <li>🩺 Regular checkups</li>
+  </ul>
+</section>
+
+  <section id="chatbot" class="chatbot">
   <h2>AI Health Assistant</h2>
   <input id="chatInput" placeholder="Describe your symptoms...">
   <button onclick="chat()">Ask</button>
