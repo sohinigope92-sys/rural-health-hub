@@ -8,20 +8,21 @@ function login() {
   alert("Welcome back, " + user);
 }
 
-function consult() {
-  let name = document.getElementById("name").value;
-  let symptoms = document.getElementById("symptoms").value;
+ function consult() {
+  const symptoms = document.getElementById("symptoms").value;
+  let result = "";
 
-  let result = `
-    <strong>Patient:</strong> ${name} <br>
-    <strong>Symptoms:</strong> ${symptoms} <br><br>
+  if (symptoms.toLowerCase().includes("fever")) {
+    result = "You may have a viral infection. Please consult a doctor and stay hydrated.";
+  } 
+  else if (symptoms.toLowerCase().includes("cough")) {
+    result = "Possible cold or respiratory issue. Wear a mask and consult a doctor.";
+  } 
+  else {
+    result = "Please consult a certified doctor for accurate diagnosis.";
+  }
 
-    <strong>Doctor Advice:</strong> Take rest, stay hydrated.<br>
-    <strong>Prescription:</strong> Paracetamol (after meals)<br>
-    <strong>Pharmacy:</strong> Nearby Rural Medical Store
-  `;
-
-  document.getElementById("result").innerHTML = result;
+  document.getElementById("chatResult").innerText = result;
 }
 
 function chat() {
